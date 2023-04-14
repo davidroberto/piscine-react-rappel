@@ -1,5 +1,4 @@
-import ArticlesList from "./ArticlesList";
-import Counter from "./Counter";
+import Faq from "./Faq";
 import Footer from "./Footer";
 import Header from "./Header";
 
@@ -8,7 +7,8 @@ function App() {
     <>
       <Header />
       {/* <ArticlesList /> */}
-      <Counter />
+      {/* <Counter /> */}
+      <Faq />
       <Footer />
     </>
   );
