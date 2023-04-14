@@ -1,4 +1,4 @@
-const Header = () => {
+const Header = ({ articlesFromApi }) => {
   return (
     <header>
       <img
@@ -11,6 +11,8 @@ const Header = () => {
         <li>About</li>
         <li>Services</li>
       </ul>
+      <p>{test}</p>
+      <p>Il y {articlesFromApi.length} articles en BDD</p>
     </header>
   );
 };
