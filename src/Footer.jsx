@@ -1,10 +1,5 @@
 const Footer = () => {
-  return (
-    <footer>
-      <p>© 2021</p>
-      <p>Mentions légales</p>
-    </footer>
-  );
+  return <p>hello footer</p>;
 };
 
 export default Footer;

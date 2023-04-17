@@ -1,19 +1,11 @@
-const Header = ({ articlesFromApi }) => {
+const Header = ({ user }) => {
   return (
-    <header>
-      <img
-        width="100px"
-        src="/web-icon-line-on-white-background-image-for-web-presentation-logo-icon-symbol-free-vector.webp"
-        alt="logo"
-      />
+    <nav>
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Services</li>
+        <li>Accueil</li>
+        {user.isLogged ? <li>Voir mon profil</li> : <li>Créer un compte</li>}
       </ul>
-      <p>{test}</p>
-      <p>Il y {articlesFromApi.length} articles en BDD</p>
-    </header>
+    </nav>
   );
 };
 
